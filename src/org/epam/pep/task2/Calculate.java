@@ -15,7 +15,7 @@ class Calculate{
 		
 		switch(operator) {
 		case "+":
-			if(dataType.equals("Integer")) {
+			if(dataType.equals("Long")) {
 				Add add = new Add((long) operandOne, (long) operandTwo);
 				return add.resultLong();
 			}
@@ -23,10 +23,10 @@ class Calculate{
 				Add add = new Add((double) operandOne, (double) operandTwo);
 				return add.resultDouble();
 			}
-			break;
+			//break;
 		
 		case "-":
-			if(dataType.equals("Integer")) {
+			if(dataType.equals("Long")) {
 				Subtract sub = new Subtract((long) operandOne, (long) operandTwo);
 				return sub.resultLong();
 			}
@@ -34,10 +34,10 @@ class Calculate{
 				Subtract sub = new Subtract((double) operandOne, (double) operandTwo);
 				return sub.resultDouble();
 			}
-			break;
+			//break;
 			
 		case "*":
-			if(dataType.equals("Integer")) {
+			if(dataType.equals("Long")) {
 				Multiply mul = new Multiply((long) operandOne, (long) operandTwo);
 				return mul.resultLong();
 			}
@@ -46,10 +46,10 @@ class Calculate{
 				return mul.resultDouble();
 			}
 			
-			break;
+			//break;
 			
 		case "/":
-			if(dataType.equals("Integer")) {
+			if(dataType.equals("Long")) {
 				Divide div = new Divide((long) operandOne, (long) operandTwo);
 				return div.resultLong();
 			}
@@ -57,10 +57,10 @@ class Calculate{
 				Divide div = new Divide((double) operandOne, (double) operandTwo);
 				return div.resultDouble();
 			}
-			break;
-		default:
-			return -1;
+			//break;
 			
+		default:
+			return -1;			
 			
 		}
 	}
